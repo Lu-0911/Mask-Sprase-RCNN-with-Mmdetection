@@ -64,8 +64,8 @@
     │   └── voc
     ```
 
-3.  **转换为 COCO 格式 (可选但推荐)：**
-    MMDetection 对 COCO 格式支持更好。您可以使用 MMDetection 提供的工具将 VOC 数据集转换为 COCO 格式。具体方法请参考 MMDetection 官方文档中关于数据集准备的部分。
+3.  **转换为 COCO 格式：**
+    MMDetection 对 COCO 格式支持更好。您可以使用 MMDetection 提供的工具将 VOC 数据集转换为 COCO 格式。
     ```bash
     python tools/dataset_converters/pascal_voc.py data\VOCdevkit --out-dir data\VOC_coco --out-format coco
     ```
@@ -115,10 +115,10 @@ python tools/test.py configs/voc/mask_rcnn_r50_fpn_1x_voc.py work_dirs/mask_rcnn
 python tools/test.py configs/voc/sparse-rcnn_r50_fpn_1x_voc.py work_dirs/sparse_rcnn_voc/latest.pth --eval bbox segm
 ```
 
---eval bbox segm 参数表示评估目标检测 (bbox) 和实例分割 (segm) 的性能。测试结果将输出到终端，也可以通过 --out 参数指定输出文件。
+`eval bbox segm` 参数表示评估目标检测 (bbox) 和实例分割 (segm) 的性能。测试结果将输出到终端，也可以通过 --out 参数指定输出文件。
 
 ## 7.日志分析与可视化
-MMDetection 支持多种可视化后端，包括 TensorBoard。您可以在配置文件中设置 vis_backends 来启用 TensorBoard。
+MMDetection 支持多种可视化后端，包括 TensorBoard。您可以在配置文件中设置启用 TensorBoard。
 
 训练日志文件 ( .log ) 包含了训练过程中的详细信息。可以使用 tools/analysis_tools/analyze_logs.py 脚本分析日志并绘制曲线图。
 
