@@ -77,7 +77,7 @@
 ### 4.1 配置文件准备
 
 1.  **复制配置文件：**
-    复制相应的配置文件（`mask_rcnn_r50_fpn_1x_coco.py` 和 `sparse-rcnn_r50_fpn_1x_coco.py`）到自定义的目录（例如 `configs/voc/`），可以添加修改。
+    复制配置文件（`mask_rcnn_r50_fpn_1x_voc.py` 和 `sparse-rcnn_r50_fpn_1x_voc.py`）到自定义的目录（例如 `configs/voc/`），可以添加修改。
     这里的`voc_coco.py` 提供了数据集的加载配置。
 
     在配置文件中，修改以下关键项：
