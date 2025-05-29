@@ -6,7 +6,7 @@ _base_ = [
 ]
 
 # 数据集路径和类别
-data_root = 'D:/py/mmdetection/data/VOC_coco/'
+data_root = '替换为实际目录/data/VOC_coco/'
 
 
 # 修改模型输出类别数
